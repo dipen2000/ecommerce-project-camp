@@ -1,2 +1,183 @@
+/*****************************8 importing zest UI ********************/
 @import url("https://focused-wiles-143c98.netlify.app/CSS/zest.css");
 
+/********************** importing fonts, reset and color CSS files ************/
+
+@import "./reset.css";
+@import "./fonts.css";
+
+/******************* General classes ****************/
+.mt-5{
+    margin-top : 5rem;
+}
+
+.mb-5{
+    margin-bottom: 5rem;
+}
+
+.mb-3{
+    margin-bottom: 3rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.txt-align-center{
+    text-align : center;
+}
+
+.highlight{
+    background-color : var(--light-test-color);
+    /* color : white; */
+    padding : 0.5rem;
+    border-radius: 5px;
+}
+
+
+.container{
+    /* border : 3px solid red;  */
+    width : 90%;
+    /* max-width : 130rem; */
+    margin : auto;
+    position : relative;
+    /* border : 3px solid red; */
+}
+
+/****************************** navigation bar  ***********************/
+
+nav{
+    /* border : 3px solid green; */
+    display : flex;
+    flex-direction: row;
+    align-items : center;
+    gap : 2rem;
+    padding : 1rem; 
+    z-index: 100;
+    background-color : var(--background-color);
+    justify-content : space-between;
+    border-bottom: thin solid #2423233d;
+}
+
+.lib-name a{
+    font-family: var(--shoedog-logo-font);
+    font-size : 3.5rem;
+    /* color : rebeccapurple; */
+}
+
+.social-icon{
+    display : flex;
+    flex-direction: row;
+    justify-content: baseline;
+    /* border : 3px solid red; */
+    gap : 2rem;
+}
+
+.social-icon .nav-icon{
+    cursor : pointer;
+    display : flex;
+    align-items : center;
+} 
+
+.nav-search-bar{
+    width : 40rem;
+    padding : 0.8rem 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: lightgray;
+    /* border : 2px solid var(--stone-500); */
+    outline : none;
+    border : 0;
+}
+
+.m-left-auto{
+    margin-left : auto;
+}
+
+/* icons with badges in navbar  */
+
+.av-sm{
+    width : 3.5rem;
+    height : 3.5rem;
+}
+
+.right{
+    right : -0.8rem;
+}
+
+.number-badge{
+    height : 2rem;
+    width : 2rem;
+    font-size : 1.3rem;
+}
+
+.bottom{
+    bottom : 2rem;
+}
+
+.categories-container{
+    /* border : 3px solid red; */
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.category{
+    position: relative;
+    /* border : 3px solid red; */
+    width : 25rem;
+    height : 15rem;
+}
+
+.overlay{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    border-radius: 5px;
+    display : flex;
+    align-items: center;
+    justify-content : center;
+}
+
+.collection-overlay{
+    color : white;
+    background-color: #0000009e;
+}
+
+.overlay a{
+    cursor: pointer;
+}
+
+.collection-container{
+    /* border : 3px solid red; */
+    display : flex;
+    flex-direction: row;
+    gap : 25px;
+    justify-content: space-between;
+}
+
+.collection{
+    display : flex;
+    flex-direction: row;
+    gap : 10px;
+    /* border : 3px solid red; */
+    padding : 20px;
+    background-color : var(--light-test-color);
+    border-radius: 8px;
+}
+
+.collection-img{
+    /* border : 3px solid red; */
+    width : 15rem;
+    height : 20rem;
+}
+
+.collection-desc-container{
+    /* border : 3px solid red; */
+    width : 18rem;
+    padding : 15px;
+    background-color : var(--background-color);
+    border-radius: 8px;
+}
