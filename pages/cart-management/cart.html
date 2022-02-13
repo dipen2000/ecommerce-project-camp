@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fd5cc9ac67.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../../CSS/styles.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="../../components/card/card.css">
+    <script src="./script.js" defer></script>
+    <script src="../../components/card/card.js" defer></script>
+    <title>ShoeDog</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="lib-name">
+                    <a href="../../index.html">SHOEDOG</a>
+                </div>    
+                    <input  class="nav-search-bar" type="search" placeholder="Search your favorite shoe here">
+                <div class="social-icon">
+                    <div class="nav-icon">
+                        <a href="#">
+                            <div class="icon av-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35z" fill="currentColor"></path></svg>
+                                <div class="badge right bottom number-badge dnd">5</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-icon">
+                        <a href="./cart.html">
+                            <div class="icon av-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2z" fill="currentColor"></path></svg>
+                                <div class="badge right bottom number-badge dnd">5</div>
+                            </div>
+                        </a>
+                    </div>
+                    <button class="btn btn-primary-solid">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h2 class="heading-2 txt-align-center mt-2 mb-2">My Cart</h2>
+            <div class="my-cart-container mb-2">
+                <div class="cart-product-container">
+                    <div class="product-card-container">
+                        <div class="cart-card-img">
+                            <img class="product-img" src="../../assets/product-shoe-1.jpg" alt="shoe image">
+                        </div>
+                        <div class="cart-card-desc">
+                            <h3 class="heading-3">Sneaker</h3>
+                            <div class="product-prices-container mb-1">
+                                <h2 class="heading-3">₹2000</h2>
+                                <span class="txt-strike product-original-price">₹4000</span>
+                            </div>
+                            <h4 class="heading-4 mb-1">50% off</h4>
+                            <div class="quantity-container mb-2">
+                                <span class="txt-md">Quantity:</span>
+                                <div class="purchase-count-container">
+                                    <button class="incr-decr-btn" id="decr-btn">-</button>
+                                    <span class="count txt-md">1</span>
+                                    <button class="incr-decr-btn" id="incr-btn">+</button>
+                                </div>
+                            </div>
+                            <div class="my-cart-btn-container">
+                                <button class="btn btn-secondary-outline disp-block">Remove from cart</button>
+                                <button class="btn btn-secondary-solid disp-block">Move to wishlist</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-details-section">
+                    <h3 class="heading-3 mb-1">PRICE DETAIL</h3>
+                    <div class="divider mb-2"></div>
+                    <div class="detail-flex-container mb-1">
+                        <span class="txt-md">Price (2 items)</span>
+                        <span class="txt-md">₹4999</span>
+                    </div>
+                    <div class="detail-flex-container mb-1">
+                        <span class="txt-md">Discount</span>
+                        <span class="txt-md">- ₹1999</span>
+                    </div>
+                    <div class="detail-flex-container mb-1">
+                        <span class="txt-md">Delivery charges</span>
+                        <span class="txt-md">₹499</span>
+                    </div>
+                    <div class="divider mb-1"></div>
+                    <div class="detail-flex-container">
+                        <h3 class="heading-3 mb-1">Total amount</h3>
+                        <h3 class="heading-3 mb-1">₹3999</h3>
+                    </div>
+                    <div class="divider mb-1"></div>
+                    <p class="txt-md mb-2">You will save ₹1999 on this order.</p>
+                    <button class="btn btn-primary-solid">Place the order</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+</body>
+
+</html>
