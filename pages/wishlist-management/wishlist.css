@@ -1,0 +1,9 @@
+.wishlist-container{
+    display : flex;
+    gap : 20px;
+    flex-wrap : wrap;
+}
+
+.wishlist svg{
+    color : var(--status-dnd);
+}
