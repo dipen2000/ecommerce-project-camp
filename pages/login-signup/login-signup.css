@@ -1,0 +1,29 @@
+.flex-container{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    height : 90vh;
+    overflow : hidden;
+    /* border : 3px solid red; */
+}
+
+.login-container{
+    /* border : 3px solid red; */
+    padding : 1.5rem;
+    background-color : var(--light-test-color);
+    border-radius: 0.8rem;
+}
+
+.login-form{
+    display : flex;
+    flex-direction: column;
+    gap : 1rem;
+    width : 30rem;
+}
+
+.login-info{
+    padding : 0.8rem;
+    border : 0;
+    outline : 0;
+    border-radius: 1rem;
+}
