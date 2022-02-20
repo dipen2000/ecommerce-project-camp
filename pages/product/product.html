@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fd5cc9ac67.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../../CSS/styles.css">
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="../../components/slider/slider.css">
+    <script src="../../script.js" defer></script>
+    <script src="../../components/slider/slider.js" defer></script>
+    <title>ShoeDog</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="lib-name">
+                    <a href="../../index.html">SHOEDOG</a>
+                </div>    
+                    <input  class="nav-search-bar" type="search" placeholder="Search your favorite shoe here">
+                <div class="social-icon">
+                    <div class="nav-icon">
+                        <a href="https://twitter.com/DipenChavda2" target="_blank">
+                            <div class="icon av-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35z" fill="currentColor"></path></svg>
+                                <div class="badge right bottom number-badge dnd">5</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-icon">
+                        <a href="https://github.com/dipen2000" target="_blank">
+                            <div class="icon av-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2z" fill="currentColor"></path></svg>
+                                <div class="badge right bottom number-badge dnd">5</div>
+                            </div>
+                        </a>
+                    </div>
+                    <button class="btn btn-primary-solid">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="content-section-container mt-5 mb-5">
+                <div class="filter-sidebar-container">
+                    <div class="filter-header-section mb-3">
+                        <h3 class="heading-3">Filters</h3>
+                        <button class="clear-btn">Clear</button>
+                    </div>
+                    <h3 class="heading-3">Prices</h3>
+                    <p class="txt-md mb-1">range from ₹1000 to ₹10000</p>
+                    <div class="slider-container">
+                        <div class="position-relative">
+                            <input class="slider" type="range" min="1" max="100" value="50">
+                            <div class="selector"></div>
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="flex-range mb-2">
+                        <p class="txt-md">1000</p>
+                        <p class="txt-md">5000</p>
+                        <p class="txt-md">10000</p>
+                    </div>
+                    <h3 class="heading-3 mb-1">Prices</h3>
+                    <div class="mb-2">
+                        <div>
+                            <input type="checkbox" id="running" name="running" value="running-shoe">
+                            <label for="running" class="label">Running shoes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sneaker" name="sneaker" value="sneaker-shoe">
+                            <label for="sneaker" class="label">Sneakers</label>
+                        </div>
+                    </div>
+                    <h3 class="heading-3 mb-1">Rating</h3>
+                    <div class="mb-2">
+                        <div>
+                            <input type="radio" id="4star" name="rate" value="running-shoe">
+                            <label for="4star" class="label">4 Star and above</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="3star" name="rate" value="sneaker-shoe">
+                            <label for="3star" class="label">3 Star and above</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="2star" name="rate" value="sneaker-shoe">
+                            <label for="2star" class="label">2 Star and above</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="1star" name="rate" value="sneaker-shoe">
+                            <label for="1star" class="label">1 Star and above</label>
+                        </div>
+                    </div>
+                    <h3 class="heading-3 mb-1">Sort by</h3>
+                    <div>
+                        <input type="radio" id="low2high" name="price" value="sneaker-shoe">
+                        <label for="low2high" class="label">Price low to high</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="high2low" name="price" value="sneaker-shoe">
+                        <label for="high2low" class="label">Price high to low</label>
+                    </div>
+                </div>
+                <div class="product-listing-container">
+                    <h3 class="heading-3 mb-2">Showing all the products</h3>
+                    <div class="product-grid-container">
+                        <div class="card mb-2">
+                            <div class="card-img">
+                                <img class="product-img" src="../../assets/product-shoe-1.jpg" alt="Nike shoe"/>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icon-park-outline" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                            </div>
+                            <div class="card-badge-container">
+                                <div class="card-badge">NEW</div>
+                            </div>
+                            <div class="card-desc">
+                                <div class="card-desc-product-info">
+                                    <h3 class="card-desc-brand">NIKE</h3>
+                                    <p class="card-desc-product-name txt-md">Nike runner</p>
+                                </div>
+                                <div class="card-desc-price-container">
+                                    <h4 class="card-desc-price">Rs. 5996</h4>
+                                </div>
+                            </div>
+                            <div class="card-reactions">
+                                <img class="add-to-cart" src="https://api.iconify.design/jam:shopping-cart.svg" alt="add to cart"/>
+                                <img class="share" src="https://api.iconify.design/ic:baseline-share.svg" alt="add to cart"/>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-img">
+                                <img class="product-img" src="../../assets/product-shoe-2.jpg" alt="Nike shoe"/>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icon-park-outline" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                            </div>
+                            <div class="card-badge-container">
+                                <div class="card-badge">NEW</div>
+                            </div>
+                            <div class="card-desc">
+                                <div class="card-desc-product-info">
+                                    <h3 class="card-desc-brand">NIKE</h3>
+                                    <p class="card-desc-product-name txt-md">Nike runner</p>
+                                </div>
+                                <div class="card-desc-price-container">
+                                    <h4 class="card-desc-price">Rs. 5996</h4>
+                                </div>
+                            </div>
+                            <div class="card-reactions">
+                                <img class="add-to-cart" src="https://api.iconify.design/jam:shopping-cart.svg" alt="add to cart"/>
+                                <img class="share" src="https://api.iconify.design/ic:baseline-share.svg" alt="add to cart"/>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-img">
+                                <img class="product-img" src="../../assets/product-shoe-3.jpg" alt="Nike shoe"/>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icon-park-outline" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                            </div>
+                            <div class="card-badge-container">
+                                <div class="card-badge">NEW</div>
+                            </div>
+                            <div class="card-desc">
+                                <div class="card-desc-product-info">
+                                    <h3 class="card-desc-brand">NIKE</h3>
+                                    <p class="card-desc-product-name txt-md">Nike runner</p>
+                                </div>
+                                <div class="card-desc-price-container">
+                                    <h4 class="card-desc-price">Rs. 5996</h4>
+                                </div>
+                            </div>
+                            <div class="card-reactions">
+                                <img class="add-to-cart" src="https://api.iconify.design/jam:shopping-cart.svg" alt="add to cart"/>
+                                <img class="share" src="https://api.iconify.design/ic:baseline-share.svg" alt="add to cart"/>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-img">
+                                <img class="product-img" src="../../assets/product-shoe-4.jpg" alt="Nike shoe"/>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icon-park-outline" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                            </div>
+                            <div class="card-badge-container">
+                                <div class="card-badge">NEW</div>
+                            </div>
+                            <div class="card-desc">
+                                <div class="card-desc-product-info">
+                                    <h3 class="card-desc-brand">NIKE</h3>
+                                    <p class="card-desc-product-name  txt-md">Nike runner</p>
+                                </div>
+                                <div class="card-desc-price-container">
+                                    <h4 class="card-desc-price">Rs. 5996</h4>
+                                </div>
+                            </div>
+                            <div class="card-reactions">
+                                <img class="add-to-cart" src="https://api.iconify.design/jam:shopping-cart.svg" alt="add to cart"/>
+                                <img class="share" src="https://api.iconify.design/ic:baseline-share.svg" alt="add to cart"/>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-img">
+                                <img class="product-img" src="../../assets/product-shoe-1.jpg" alt="Nike shoe"/>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icon-park-outline" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                            </div>
+                            <div class="card-badge-container">
+                                <div class="card-badge">NEW</div>
+                            </div>
+                            <div class="card-desc">
+                                <div class="card-desc-product-info">
+                                    <h3 class="card-desc-brand">NIKE</h3>
+                                    <p class="card-desc-product-name  txt-md">Nike runner</p>
+                                </div>
+                                <div class="card-desc-price-container">
+                                    <h4 class="card-desc-price">Rs. 5996</h4>
+                                </div>
+                            </div>
+                            <div class="card-reactions">
+                                <img class="add-to-cart" src="https://api.iconify.design/jam:shopping-cart.svg" alt="add to cart"/>
+                                <img class="share" src="https://api.iconify.design/ic:baseline-share.svg" alt="add to cart"/>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-img">
+                                <img class="product-img" src="../../assets/product-shoe-2.jpg" alt="Nike shoe"/>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icon-park-outline" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                            </div>
+                            <div class="card-badge-container">
+                                <div class="card-badge">NEW</div>
+                            </div>
+                            <div class="card-desc">
+                                <div class="card-desc-product-info">
+                                    <h3 class="card-desc-brand">NIKE</h3>
+                                    <p class="card-desc-product-name  txt-md">Nike runner</p>
+                                </div>
+                                <div class="card-desc-price-container">
+                                    <h4 class="card-desc-price">Rs. 5996</h4>
+                                </div>
+                            </div>
+                            <div class="card-reactions">
+                                <img class="add-to-cart" src="https://api.iconify.design/jam:shopping-cart.svg" alt="add to cart"/>
+                                <img class="share" src="https://api.iconify.design/ic:baseline-share.svg" alt="add to cart"/>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-img">
+                                <img class="product-img" src="../../assets/product-shoe-3.jpg" alt="Nike shoe"/>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icon-park-outline" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                            </div>
+                            <div class="card-badge-container">
+                                <div class="card-badge">NEW</div>
+                            </div>
+                            <div class="card-desc">
+                                <div class="card-desc-product-info">
+                                    <h3 class="card-desc-brand">NIKE</h3>
+                                    <p class="card-desc-product-name txt-md">Nike runner</p>
+                                </div>
+                                <div class="card-desc-price-container">
+                                    <h4 class="card-desc-price">Rs. 5996</h4>
+                                </div>
+                            </div>
+                            <div class="card-reactions">
+                                <img class="add-to-cart" src="https://api.iconify.design/jam:shopping-cart.svg" alt="add to cart"/>
+                                <img class="share" src="https://api.iconify.design/ic:baseline-share.svg" alt="add to cart"/>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-img">
+                                <img class="product-img" src="../../assets/product-shoe-4.jpg" alt="Nike shoe"/>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--icon-park-outline" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                            </div>
+                            <div class="card-badge-container">
+                                <div class="card-badge">NEW</div>
+                            </div>
+                            <div class="card-desc">
+                                <div class="card-desc-product-info">
+                                    <h3 class="card-desc-brand">NIKE</h3>
+                                    <p class="card-desc-product-name txt-md">Nike runner</p>
+                                </div>
+                                <div class="card-desc-price-container">
+                                    <h4 class="card-desc-price">Rs. 5996</h4>
+                                </div>
+                            </div>
+                            <div class="card-reactions">
+                                <img class="add-to-cart" src="https://api.iconify.design/jam:shopping-cart.svg" alt="add to cart"/>
+                                <img class="share" src="https://api.iconify.design/ic:baseline-share.svg" alt="add to cart"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+</body>
+
+</html>
