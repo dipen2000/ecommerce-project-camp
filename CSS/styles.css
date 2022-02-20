@@ -5,6 +5,7 @@
 
 @import "./reset.css";
 @import "./fonts.css";
+@import "./colors.css";
 
 /******************* General classes ****************/
 .mt-5{
@@ -65,7 +66,6 @@
     /* max-width : 130rem; */
     margin : auto;
     position : relative;
-    /* border : 3px solid red; */
 }
 
 /****************************** navigation bar  ***********************/
@@ -108,8 +108,7 @@ nav{
     padding : 0.8rem 0.8rem;
     font-size: 1.5rem;
     border-radius: 0.5rem;
-    background-color: lightgray;
-    /* border : 2px solid var(--stone-500); */
+    background-color: var(--searchbar-bg-color);
     outline : none;
     border : 0;
 }
@@ -166,8 +165,8 @@ nav{
 }
 
 .collection-overlay{
-    color : white;
-    background-color: #0000009e;
+    color : var(--background-color);
+    background-color: var(--category-overlay);
 }
 
 .overlay a{
@@ -178,16 +177,16 @@ nav{
     /* border : 3px solid red; */
     display : flex;
     flex-direction: row;
-    gap : 25px;
+    gap : 2.5rem;
     justify-content: space-between;
 }
 
 .collection{
     display : flex;
     flex-direction: row;
-    gap : 10px;
+    gap : 1rem;
     /* border : 3px solid red; */
-    padding : 20px;
+    padding : 2rem;
     background-color : var(--light-test-color);
     border-radius: 8px;
 }

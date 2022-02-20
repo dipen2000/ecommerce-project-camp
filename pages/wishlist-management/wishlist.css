@@ -1,6 +1,6 @@
 .wishlist-container{
     display : flex;
-    gap : 20px;
+    gap : 2rem;
     flex-wrap : wrap;
 }
 

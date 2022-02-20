@@ -1,3 +1,6 @@
 :root{
     --super-light-gray : #2423233d;
+    --searchbar-bg-color :  lightgray;
+    --category-overlay : #0000009e;
+    --products-container-bg-color : #80808049;
 }
