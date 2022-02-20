@@ -27,12 +27,28 @@
     margin-bottom: 3rem;
 }
 
+.mt-3{
+    margin-top : 3rem;
+}
+
 .mb-2{
     margin-bottom: 2rem;
 }
 
+.mt-2{
+    margin-top: 2rem;
+}
+
+.disp-block{
+    display : block;
+}
+
 .txt-align-center{
     text-align : center;
+}
+
+.divider{
+    border-bottom : 2px solid black;
 }
 
 .highlight{
