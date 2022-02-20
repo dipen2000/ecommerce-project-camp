@@ -29,7 +29,7 @@ To start using the components in your project, Copy-paste the stylesheet ```<lin
 
 ## Live link :
 
-Documentation site : [Shoedog screens](https://shoedog-temp.netlify.app/)
+Live site : [Shoedog screens](https://shoedog-temp.netlify.app/)
 
 ## Screen shots :
 
