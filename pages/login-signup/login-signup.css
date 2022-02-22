@@ -4,11 +4,9 @@
     justify-content : center;
     height : 90vh;
     overflow : hidden;
-    /* border : 3px solid red; */
 }
 
 .login-container{
-    /* border : 3px solid red; */
     padding : 1.5rem;
     background-color : var(--light-test-color);
     border-radius: 0.8rem;

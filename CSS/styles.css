@@ -1,5 +1,5 @@
 /*****************************8 importing zest UI ********************/
-@import url("https://focused-wiles-143c98.netlify.app/CSS/zest.css");
+@import url("https://zestui.netlify.app/CSS/zest.css");
 
 /********************** importing fonts, reset and color CSS files ************/
 
@@ -49,29 +49,29 @@
 }
 
 .divider{
-    border-bottom : 2px solid black;
+    border-bottom : 2px solid var(--border-color);
 }
 
 .highlight{
     background-color : var(--light-test-color);
-    /* color : white; */
     padding : 0.5rem;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 
 .container{
-    /* border : 3px solid red;  */
     width : 90%;
-    /* max-width : 130rem; */
     margin : auto;
     position : relative;
+}
+
+.wht-sp-no-wrap{
+    white-space: nowrap;
 }
 
 /****************************** navigation bar  ***********************/
 
 nav{
-    /* border : 3px solid green; */
     display : flex;
     flex-direction: row;
     align-items : center;
@@ -80,20 +80,19 @@ nav{
     z-index: 100;
     background-color : var(--background-color);
     justify-content : space-between;
-    border-bottom: thin solid #2423233d;
+    border-bottom: thin solid var(--nav-border-bottom);
 }
 
 .lib-name a{
     font-family: var(--shoedog-logo-font);
     font-size : 3.5rem;
-    /* color : rebeccapurple; */
 }
 
 .social-icon{
     display : flex;
     flex-direction: row;
     justify-content: baseline;
-    /* border : 3px solid red; */
+    align-items : center;
     gap : 2rem;
 }
 
@@ -139,15 +138,15 @@ nav{
 }
 
 .categories-container{
-    /* border : 3px solid red; */
     display : flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap : 2rem;
 }
 
 .category{
     position: relative;
-    /* border : 3px solid red; */
     width : 25rem;
     height : 15rem;
 }
@@ -158,14 +157,14 @@ nav{
     left : 0;
     width : 100%;
     height : 100%;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     display : flex;
     align-items: center;
     justify-content : center;
 }
 
 .collection-overlay{
-    color : var(--background-color);
+    color : var(--temp-bg-color);
     background-color: var(--category-overlay);
 }
 
@@ -174,33 +173,81 @@ nav{
 }
 
 .collection-container{
-    /* border : 3px solid red; */
     display : flex;
     flex-direction: row;
     gap : 2.5rem;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .collection{
     display : flex;
     flex-direction: row;
     gap : 1rem;
-    /* border : 3px solid red; */
     padding : 2rem;
     background-color : var(--light-test-color);
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }
 
 .collection-img{
-    /* border : 3px solid red; */
     width : 15rem;
     height : 20rem;
 }
 
 .collection-desc-container{
-    /* border : 3px solid red; */
-    width : 18rem;
-    padding : 15px;
+    width : 15rem;
+    padding : 1.5rem;
     background-color : var(--background-color);
-    border-radius: 8px;
+    border-radius: 0.8rem;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 5rem;
+    height: 2.6rem;
+    border-radius: 5rem;
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.fa-moon {color: var(--moon-color);}
+  
+.fa-sun {color: var(--sun-color);}
+  
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+
+.toggle-icon{
+      font-size : 1.8rem;
+  }
+
+  .btn-primary-solid{
+      color : var(--temp-bg-color);
+  }
+
+@media only screen and (max-width: 800px){
+    .nav-search-bar{
+        display : none;
+    }
 }
