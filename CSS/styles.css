@@ -207,7 +207,7 @@ nav{
 }
 
 .checkbox-label {
-    background-color: #111;
+    background-color: var(--dark-mode-toggle-bg-color);
     width: 5rem;
     height: 2.6rem;
     border-radius: 5rem;
@@ -224,7 +224,7 @@ nav{
 .fa-sun {color: var(--sun-color);}
   
 .checkbox-label .ball {
-    background-color: #fff;
+    background-color: var(--toggle-ball-color);
     width: 2.2rem;
     height: 2.2rem;
     position: absolute;

@@ -24,7 +24,7 @@
 }
 
 .carousel-overlay-font{
-    color : white;
+    color : var(--white);
 }
 
 .carousel-overlay-font-big{
