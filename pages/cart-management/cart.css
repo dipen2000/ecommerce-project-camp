@@ -1,7 +1,6 @@
 .my-cart-container{
     display : flex;
     flex-direction: row;
-    width : 80%;
     margin : auto;
     gap : 3rem;
     justify-content : center;
@@ -22,4 +21,32 @@
 .detail-flex-container{
     display : flex;
     justify-content: space-between;
+}
+
+.btn-primary-solid{
+    width : 100%;
+}
+
+@media only screen and (max-width : 900px){
+    .my-cart-container{
+        flex-direction : column;
+        align-items : center;
+    }
+}
+
+@media only screen and (max-width : 700px){
+    .container{
+        width : 100%;
+    }
+}
+
+@media only screen and (max-width : 400px){
+    .product-card-container{
+        flex-direction: column;
+        width : 100% !important;
+        align-items : center;
+    }
+    .price-details-section{
+        width : 100%;
+    }
 }

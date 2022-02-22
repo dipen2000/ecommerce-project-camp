@@ -67,7 +67,6 @@
 .btn-cart-outline{
     color : var(--dark-gray);
     border : 3px solid var(--warning-alert-color);
-    width : 100%;
     margin:0;
 }
 
@@ -76,7 +75,6 @@
 }
 
 .btn-cart-solid{
-    width : 100%;
     background-color : var(--warning-alert-color);
     margin:0;
 }
@@ -84,7 +82,6 @@
 .btn-cart-solid:hover{
     background-color : var(--rating-icon-color);
 }
-
 
 .btn-primary-solid{
     width : 100%;
