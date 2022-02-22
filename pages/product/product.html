@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="../../CSS/styles.css">
     <link rel="stylesheet" href="./product.css">
     <link rel="stylesheet" href="../../components/slider/slider.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="../../CSS/theme.css">
     <script src="../../script.js" defer></script>
     <script src="../../components/slider/slider.js" defer></script>
-    <title>ShoeDog</title>
+    <title>ShoeDog | Products</title>
 </head>
 <body>
     <div class="container">
@@ -21,6 +26,14 @@
                 </div>    
                     <input  class="nav-search-bar" type="search" placeholder="Search your favorite shoe here">
                 <div class="social-icon">
+                    <div>
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-sun toggle-icon"></i>
+                        <i class="fas fa-moon toggle-icon"></i>
+                        <span class="ball"></span>
+                        </label>
+                    </div>
                     <div class="nav-icon">
                         <a href="../wishlist-management/wishlist.html">
                             <div class="icon av-sm">
@@ -37,8 +50,10 @@
                             </div>
                         </a>
                     </div>
-                    <button class="btn btn-primary-solid">
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                    <button class="btn btn-primary-solid login-btn">
+                        <a href="../login-signup/login-signup.html">
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                        </a>
                     </button>
                 </div>
             </nav>
@@ -303,8 +318,6 @@
                 </div>
             </div>
         </main>
-    </div>
-    
+    </div> 
 </body>
-
 </html>

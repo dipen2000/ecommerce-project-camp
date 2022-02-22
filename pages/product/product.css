@@ -1,5 +1,4 @@
 .content-section-container{
-    /* border : 3px solid red; */
     display : grid;
     grid-template-areas: "sidebar main-content";
     grid-template-columns: 30rem minmax(0,1fr);
@@ -8,15 +7,14 @@
 }
 
 .filter-sidebar-container{
-    /* border : 3px solid purple; */
     grid-area: sidebar;
     padding : 0.8rem;
 }
 
 .product-listing-container{
-    /* border : 3px solid yellow; */
     grid-area: main-content;
     border-radius: 0.8rem;
+    padding : 1.5rem;
 }
 
 .filter-header-section{
@@ -44,12 +42,6 @@
 .label{
     font-size : 2rem;
     font-family: var(--nav-list-items-font);
-}
-
-.product-listing-container{
-    /* border : 3px solid red; */
-    padding : 1.5rem;
-    background-color: rgba(128, 128, 128, 0.288);
 }
 
 .product-grid-container{

@@ -1,0 +1,23 @@
+@import "./colors.css";
+
+body{
+    --background-color : #fffafa;
+    --bg-color-for-containers :  #fffafa;
+    --test-color: #663399;
+    --nav-border-bottom : #2423233d;
+    --border-color : var(--dark-gray);
+    color : black;
+}
+
+body.dark{
+    --background-color :  #242323;
+    --bg-color-for-containers : #663399;
+    --nav-border-bottom : #ffffff3d;
+    --border-color : #fffafa;
+    --test-color: #b689e3;
+    color : #fffafa;
+}
+
+body.dark .btn-main-home{
+    color :  #fffafa;
+}

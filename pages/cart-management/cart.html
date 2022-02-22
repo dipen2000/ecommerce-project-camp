@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fd5cc9ac67.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="../../CSS/styles.css">
+    <link rel="stylesheet" href="../../CSS/theme.css">
     <link rel="stylesheet" href="./cart.css">
     <link rel="stylesheet" href="../../components/card/card.css">
-    <script src="./script.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/fd5cc9ac67.js" crossorigin="anonymous" defer></script>
+    <script src="../../script.js" defer></script>
     <script src="../../components/card/card.js" defer></script>
-    <title>ShoeDog</title>
+    <title>ShoeDog | Cart</title>
 </head>
 <body>
     <div class="container">
@@ -21,6 +27,14 @@
                 </div>    
                     <input  class="nav-search-bar" type="search" placeholder="Search your favorite shoe here">
                 <div class="social-icon">
+                    <div>
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-sun toggle-icon"></i>
+                        <i class="fas fa-moon toggle-icon"></i>
+                        <span class="ball"></span>
+                        </label>
+                    </div>
                     <div class="nav-icon">
                         <a href="../wishlist-management/wishlist.html">
                             <div class="icon av-sm">
@@ -37,8 +51,10 @@
                             </div>
                         </a>
                     </div>
-                    <button class="btn btn-primary-solid">
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                    <button class="btn btn-primary-solid login-btn">
+                        <a href="../login-signup/login-signup.html">
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                        </a>
                     </button>
                 </div>
             </nav>
@@ -67,10 +83,9 @@
                                 </div>
                             </div>
                             <div class="my-cart-btn-container">
-                                <button class="btn btn-secondary-outline disp-block">Remove from cart</button>
-                                <button class="btn btn-secondary-solid disp-block">Move to wishlist</button>
+                                <button class="btn btn-cart-solid disp-block">Remove from cart</button>
+                                <button class="btn btn-cart-outline disp-block">Move to wishlist</button>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -102,7 +117,5 @@
             </div>
         </main>
     </div>
-    
 </body>
-
 </html>
